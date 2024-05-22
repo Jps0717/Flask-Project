@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waiting for Players</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/hostgame.css') }}">
+</head>
+<body>
+    <div id="waitingScreen" class="waiting-screen">
+        <div class="loading-spinner"></div>
+        <h2>Waiting for other players to join...</h2>
+        <div id="playerStatus">Currently joined: 0 players</div>
+    </div>
+
+    <div id="gameScreen" class="game-screen" style="display: none;">
+        <!-- Game content goes here -->
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='js/hostgame.js') }}"></script>
+</body>
+</html>

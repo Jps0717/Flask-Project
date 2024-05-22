@@ -1,0 +1,46 @@
+/* Updated CSS with button centered in the list box and no bullet points */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+#joinGameContainer {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#broadcastersList {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#broadcastersList li {
+    display: flex;
+    justify-content: center;
+}
+
+#joinButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#joinButton:hover {
+    background-color: #0056b3;
+}
+
+#gameStatus {
+    margin-top: 20px;
+}

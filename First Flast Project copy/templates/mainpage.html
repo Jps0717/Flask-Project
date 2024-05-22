@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JP GAMES</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mainpage.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="content">
+    <h1 id="title">JP GAMES</h1>
+    <div class="controls">
+        <form method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" placeholder="Enter Your Name" required><br>
+        </form>
+        <button type="button" class="button hostButton" id="hostButton">HOST GAME</button>
+        <button type="button" class="button joinButton" id="joinButton">JOIN GAME</button>
+    </div>
+</div>
+<script src="{{ url_for('static', filename='js/mainpage.js') }}"></script>
+<script>
+    var hostUrl = "{{ url_for('host_game') }}";
+    var joinUrl = "{{ url_for('join_game') }}";
+</script>
+</body>
+</html>

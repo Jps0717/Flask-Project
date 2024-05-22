@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/joingame.css') }}">
+</head>
+<body>
+    <div id="joinGameContainer">
+        <h1>Join the Game</h1>
+        <ul id="broadcastersList">Waiting for broadcasters...</ul>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="{{ url_for('static', filename='js/joingame.js') }}"></script>
+</body>
+</html>
